@@ -1,0 +1,242 @@
+/*Import Font Family*/
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+/*End Import Font Family*/
+body {
+  font-family: 'Overpass', sans-serif;
+}
+
+.navbar {
+  background-color: #25252503;
+  z-index: 1030;
+}
+
+@media (max-width: 768px) {
+  .navbar > .container .navbar-collapse .navbar-nav {
+    background-color: white;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    margin: 50px 0;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar > .container .navbar-collapse .navbar-nav > .row {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    text-align: center !important;
+    color: #000;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar > .container .navbar-collapse .navbar-nav > .row button {
+    color: #fff !important;
+  }
+}
+
+.navbar > .container .navbar-collapse .navbar-nav > .row button.Sign_Up {
+  color: #ff3d54 !important;
+}
+
+.navbar > .container .navbar-collapse .navbar-nav > .row button.Sign_Up:hover {
+  color: #f6f6f8 !important;
+  background-color: rgba(255, 61, 84, 0.671) !important;
+  border-color: rgba(255, 61, 84, 0.753) !important;
+}
+
+@media (min-width: 769px) {
+  .navbar > .container .navbar-collapse .navbar-nav > .row button.Sign_Up:hover {
+    background-color: #ff8f70;
+    color: #f6f6f8 !important;
+    border-color: #f6f6f8;
+  }
+}
+
+.navbar > .container .navbar-collapse .navbar-nav .nav-item .dropdown-toggle {
+  color: #000;
+}
+
+@media (min-width: 769px) {
+  .navbar > .container .navbar-collapse .navbar-nav .nav-item .dropdown-toggle {
+    color: #fff !important;
+  }
+}
+
+.navbar .dropdown-item.active, .navbar .dropdown-item:active {
+  color: #252525;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+main.product {
+  position: relative;
+  z-index: 2;
+  padding-top: 100px;
+  min-height: 50vh;
+  background-image: url("/assists/images/bg-pattern-intro-desktop.svg");
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 85px;
+}
+
+@media (max-width: 768px) {
+  main.product {
+    background-image: url("/assists/images/bg-pattern-intro-mobile.svg");
+  }
+}
+
+main.product::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ff8f70, #ff3d54);
+  border-bottom-left-radius: 85px;
+  opacity: 0.91;
+}
+
+main.product > .container {
+  min-height: inherit;
+}
+
+main.product .Action_buttons > :first-child {
+  color: #ff3d54;
+}
+
+main.product .Action_buttons > :first-child:hover {
+  color: #ff3d54;
+}
+
+@media (max-width: 768px) {
+  main.product .Action_buttons > :first-child {
+    width: 50%;
+  }
+}
+
+main.product .Action_buttons > :last-child:hover {
+  color: #ff3d54;
+}
+
+@media (max-width: 768px) {
+  main.product .Action_buttons > :last-child {
+    width: 50%;
+  }
+}
+
+.productTwo {
+  min-height: 80vh;
+  overflow-x: hidden;
+}
+
+.productTwo > .container {
+  min-height: inherit;
+}
+
+@media (max-width: 992px) {
+  .productTwo > .container .illustration_editor_Text {
+    text-align: center !important;
+  }
+}
+
+.productTwo > .container .illustration_editor_Image img {
+  max-width: 100%;
+}
+
+.productThree {
+  position: relative;
+  z-index: 2;
+  min-height: 80vh;
+}
+
+.productThree::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(45deg, #2c2d3f, #3f4164);
+  border-top-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+}
+
+@media (max-width: 992px) {
+  .productThree::after {
+    height: 100%;
+  }
+}
+
+.productThree > .container {
+  min-height: inherit;
+  background: url("../images/bg-pattern-circles.svg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.productThree > .container .illustration_laptop_Image img {
+  max-width: 100%;
+}
+
+@media (max-width: 992px) {
+  .productThree > .container .illustration_laptop_Text {
+    text-align: center !important;
+  }
+}
+
+.productThree > .container .illustration_laptop_Text p {
+  opacity: 0.7;
+  line-height: 20px;
+}
+
+.productFour {
+  min-height: 80vh;
+}
+
+@media (max-width: 992px) {
+  .productFour > .container .row h3 {
+    text-align: center !important;
+    margin-top: 35px;
+  }
+}
+
+.productFour > .container .row .col-12 .section_image {
+  max-width: 100%;
+}
+
+footer {
+  min-height: 55vh;
+  background: linear-gradient(45deg, #2c2d3f, #3f4164);
+  border-top-right-radius: 75px;
+}
+
+footer > .container {
+  min-height: inherit;
+}
+
+@media (max-width: 992px) {
+  footer > .container {
+    text-align: center !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
